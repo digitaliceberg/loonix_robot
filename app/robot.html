@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <base href="/">
+    <title>Robot</title>
+</head>
+
+<body>
+<script>
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+window.addEventListener("keypress", checkKeyPressed, false);
+
+function checkKeyPressed(e) {
+    if (e.charCode == "119") {
+        httpGet("http://192.168.1.145:8080/w")
+    }
+    if (e.charCode == "115") {
+        httpGet("http://192.168.1.145:8080/s")
+    }
+    if (e.charCode == "97") {
+        httpGet("http://192.168.1.145:8080/a")
+    }
+    if (e.charCode == "100") {
+        httpGet("http://192.168.1.145:8080/d")
+    }
+}
+
+</script>
+</body>
+</html>
