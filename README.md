@@ -16,5 +16,5 @@ File specifications:
 * `wiring.go`: Called by main.go, uses RPI GPIO to control the controller which turns the motors
 * `app`: Dir containig simple web app in js.
 
-###More info
+### More info
 This is the Alpha of the Alpha, I wasn't able to find the code of the finished project but found this in my archives, decided to dump it on my github.
